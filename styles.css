@@ -1,0 +1,72 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 60px;
+  width: 80%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.container .heading{
+  position:sticky;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .heading h{
+  color:black;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .images{
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.images .card{
+  width: 32%;
+  height: 50%;
+  background-color: brown;
+  margin-bottom:10px;
+  border-radius: 20%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.images .card img{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(1);
+  border-radius: 20px;
+}
+.images .card img:hover{
+  filter:grayscale(0);
+  cursor: pointer;
+}
